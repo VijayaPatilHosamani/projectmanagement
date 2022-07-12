@@ -4,6 +4,21 @@
     {
       "type": "aws-sam",
       "request": "direct-invoke",
+      "name": "frontend:src/containers/Home.Home (nodejs14.x)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/frontend",
+        "lambdaHandler": "src/containers/Home.Home"
+      },
+      "lambda": {
+        "runtime": "nodejs14.x",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    },
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
       "name": "projectmanagement:stacks/index.main (nodejs14.x)",
       "invokeTarget": {
         "target": "code",

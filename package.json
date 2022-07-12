@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "sst start",
+    "start": "sst-env -- react-scripts start",
     "build": "sst build",
     "deploy": "sst deploy --stage=production",
     "remove": "sst remove",
@@ -22,7 +22,6 @@
     "backend"
   ],
   "dependencies": {
-    "autoprefixer": "10.4.5",
     "aws-sdk": "^2.1152.0",
     "uuid": "^8.3.2"
   }
